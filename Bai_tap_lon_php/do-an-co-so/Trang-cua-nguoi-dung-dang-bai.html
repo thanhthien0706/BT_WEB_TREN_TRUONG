@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết của tôi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/css/css_your-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css"> -->
+</head>
+<body>
+    <div id="main">
+        <!-- Bắt đầu phàn header -->
+        <div id="header">
+            <!-- tạo nav -->
+            <div id="main-nav" class="nav-chinh">
+            <div class="container nav-can-len">
+                <div class="hien-thi khoang-cach-cac-phan">
+                    <ul class="hien-thi-menu">
+                        <li class="hien-thi-li">
+                            <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                        </li>
+                        <li class="hien-thi-li repon-mobile">
+                            <p class="logo-text">
+                                <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                thegioiso.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="thanh-search khoang-cach-cac-phan">
+                    <input class="input-search" type="text" placeholder="Tìm kiến">
+                    <!-- <button class="btn-tim">
+                        <i class="ti-search"></i>
+                    </button> -->
+                </div>
+    
+                <div class="item-icon khoang-cach-cac-phan">
+                    <ul class="item-icon-ul">
+                        <li class="item-icon-li">
+                            <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                        </li>
+                        <li class="item-icon-li item-account">
+                            <i class="ti-user"></i>
+
+                            <div id="iteam__nav" class="nav_mobile">
+                                <div class="item">
+                                    <a href="./Trang-cua-nguoi-dung.html">Trang của tôi</a>
+                                </div>
+    
+                                <div class="item">
+                                    <a href="./index.html">Đăng xuất</a>
+                                </div>
+    
+                                <!-- <div class="item">
+                                    <a href="#">Cộng Đồng</a>
+                                </div> -->
+    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+            </div>
+            <!-- tạo nav -->
+        
+            <!-- tao phan hiển thị -->
+            <div id="mySidepanel" class="sidepanel" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./index-da-dang-nhap.html">Trang Chủ</a>
+            <a href="./mua-hang.html">Cửa hàng</a>
+            <a href="./Ban-hang.html">Mua bán</a>
+            <a href="./blog.html">Blog</a>
+            <hr style="background-color: #01DF01;">
+            <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+            <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+            </div>
+            <!-- kết thúc hiển thị -->
+        </div>
+        <!-- Kết thúc phàn header -->
+
+        <!-- Bắt đầu phàn Content -->
+        <div id="content" class="Khoang-cach-phan-content mau-nen-content">
+            <div class="chua-chung-heeder">
+                <div class="container">
+                    <div class="box-chua-ten-nguoi-dung">
+                        <div class="chua-ten">
+                            <img class="anh-nguoi-dung" src="./assect/img/your-page/long_le.jpg" alt="">
+                            <div class="thong-tin-nguoi-dung">
+                                <p class="ten-nguoi-dung">Le Quang Long</p>
+                                <p class="so-luong-dang-ki">Có <span class="so-luong">2</span> người theo dõi</p>
+                            </div>
+                        </div>
+    
+                        <!-- tạo phần chức năng trong -->
+                        <!-- <div class="nav-chuc-nang-nguoi-dung">
+                            
+                        </div> -->
+                    </div>
+    
+                    <!-- phần chứa bản chọn các chức năng -->
+                    <div class="box-chua-chung-cac-chuc-nang">
+                        <div class="nav-chua-nang">
+                            <ul class="nav-chuc-nang-ul">
+                                <li class="nav-chuc-nang-li duoc-lua-chon">
+                                    <p class="cac-lua-chon ">Bài đăng</p>
+                                </li>
+                                <li class="nav-chuc-nang-li">
+                                    <!-- <a href="./Trang-cua-nguoi-dung-da-mua.html"></a> -->
+                                    <p class="cac-lua-chon" onclick="window.location.href='./Trang-cua-nguoi-dung-da-mua.html'">Đã mua</p>
+                                </li>
+                                <li class="nav-chuc-nang-li">
+                                    <p class="cac-lua-chon" onclick="window.location.href='./Trang-cua-nguoi-dung-message.html'">Tin nhắn</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- phần hiển thị của từng trang -->
+            <div class="chua-chung-hienthi-cuatung-trang">
+                <div class="container">
+                    <div class="phan-chua-noi-dung">
+                        <p class="thoigian">Hôm nay</p>
+                        <!-- sản phẩm 1 -->
+                        <div class="box-phan-chia">
+                            <div class="phan-hien-san-pham">
+                            <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                <img src="./assect/img/Cửa-hàng/dien-thoai/anh-1.jpg" alt="">
+                            </div>
+        
+                            <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                <h3 class="ten-san-pham">Oppo A73 cũ</h3>
+                                <p class="the-loai-san-pham">
+                                    Thể loại: điện thoại
+                                </p>
+        
+                                <p class="mota">
+                                    Mô tả: điện thoại ngày tôi mới mua nhưng do kẹt
+                                         nên bán lại gấp. Cam kết sản phẩm còn mới, sử dụng dưới 2 tháng
+                                </p>
+                            </div>
+        
+                            <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                <!-- <p class="ten-nguoi-ban">Nguyễn Thành Thiện</p>
+                                <p class="sdt-nguoi-ban">SDT: 0816122945</p> -->
+                                <p class="gia-san-pham">
+                                    Giá:
+                                    <span class="so-gia">3.000.000đ</span>
+                                </p>
+
+                                <p class="tinh-trang-kiem-duyet">
+                                    Tình Trang: Đang chờ xử lý...
+                                </p>
+        
+                            </div>
+        
+                            </div>
+                        </div>
+
+                        <!-- sản phẩm 2 -->
+                        <div class="box-phan-chia">
+                            <div class="phan-hien-san-pham">
+                            <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/29/637553049638412708_ss-s20-fe-xanhla-dd.jpg" alt="">
+                            </div>
+        
+                            <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                <h3 class="ten-san-pham">Samsung Galaxy S20 FE</h3>
+                                <p class="the-loai-san-pham">
+                                    Thể loại: điện thoại
+                                </p>
+        
+                                <p class="mota">
+                                    Mô tả: điện thoại ngày tôi mới mua nhưng do kẹt
+                                         nên bán lại gấp. Cam kết sản phẩm còn mới, sử dụng dưới 2 tháng
+                                </p>
+                            </div>
+        
+                            <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                <!-- <p class="ten-nguoi-ban">Nguyễn Thành Thiện</p>
+                                <p class="sdt-nguoi-ban">SDT: 0816122945</p> -->
+                                <p class="gia-san-pham">
+                                    Giá:
+                                    <span class="so-gia">12.000.000đ</span>
+                                </p>
+
+                                <p class="tinh-trang-kiem-duyet">
+                                    Tình Trang: Đã đăng...
+                                </p>
+        
+                            </div>
+        
+                            </div>
+                        </div>
+
+                        <p class="thoigian">Ngày 20/6/2021</p>
+                        <!-- sản phẩm 4 -->
+                        <div class="box-phan-chia">
+                            <div class="phan-hien-san-pham">
+                            <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                <img src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/2/3/637479614485943996_ip-12-pro-max-dd-2nam.jpg" alt="">
+                            </div>
+        
+                            <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                <h3 class="ten-san-pham">Inphone 12 Pro Max 128GB</h3>
+                                <p class="the-loai-san-pham">
+                                    Thể loại: điện thoại
+                                </p>
+        
+                                <p class="mota">
+                                    Mô tả: điện thoại ngày tôi mới mua nhưng do kẹt
+                                         nên bán lại gấp. Cam kết sản phẩm còn mới, sử dụng dưới 2 tháng
+                                </p>
+                            </div>
+        
+                            <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                <!-- <p class="ten-nguoi-ban">Nguyễn Thành Thiện</p>
+                                <p class="sdt-nguoi-ban">SDT: 0816122945</p> -->
+                                <p class="gia-san-pham">
+                                    Giá:
+                                    <span class="so-gia">13.000.000đ</span>
+                                </p>
+
+                                <p class="tinh-trang-kiem-duyet">
+                                    Tình Trang: Đã đăng...
+                                </p>
+        
+                            </div>
+        
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Kết thúc phàn Content -->
+
+        <!-- bắt dầu phần footer -->
+        <div id="footer" class="footer">
+            <div class="container">
+                <div class="row thanh-cot-repon">
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                        <p>
+                            Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                            Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Liên Hệ</h5>
+                        <p>
+                            470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                            Ngũ Hành Sơn, Đà Nẵng
+                        </p>
+
+                        <p>
+                            +8481-813-3841
+                        </p>
+
+                        <p>
+                            thegioiso@gmail.com
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Theo Dõi</h5>
+                        <p class="chua-item">
+                            <i class="ti-facebook item-mang-xh"></i>
+                            <i class="ti-instagram item-mang-xh"></i>
+                            <i class="ti-pinterest item-mang-xh"></i>
+                            <i class="ti-twitter item-mang-xh"></i>
+                        </p>
+                    </div>
+                    
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                        <p>
+                            <button class="btn-footer">Đăng ký</button>
+                            <button class="btn-footer">Đăng nhập</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- kết thúc phần footer -->
+
+    </div>
+
+    <script src="./assect/javascript/js-your-page.js">
+
+    </script>
+</body>
+</html>

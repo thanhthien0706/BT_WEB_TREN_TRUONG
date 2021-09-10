@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    /* padding: 20px; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+.content .chuatn{
+    position: relative;
+    display: grid;
+    min-width: 630px;
+    /* background-color: #fff; */
+    padding: 20px 20px 0 20px;
+}
+.content .thumuc{
+    position: relative;
+    display: grid;
+    min-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+}
+.user_img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+}
+
+.user_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.card{
+    max-width: 400px;
+    padding: 8px 22px;
+    margin: 12px;   
+    border-radius:40px ;
+}
+.card.phanhoi{
+    background-color: #128bee;
+    margin-left: 300px;
+    color: #fff;
+    padding: 8px 20px;
+}
+
+.entertinnhan{
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.entertinnhan input[type*="text"]{
+    width: 78%;
+    outline: none;
+    border: none;
+}
+.entertinnhan i{
+    font-size: 20px;
+    background-color:#000;
+    padding: 10px;
+    color: #fff;
+    margin: 8px;
+    border-radius: 50%;
+}
+.entertinnhan input[type*="submit"]{
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 8px;
+}
+
+.search-tinnhan input{
+    margin-top: 9px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 150px;
+    padding-left: 45px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.search-tinnhan i{
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.canhan{
+    margin: 12px 0;
+}
+.user_name{
+    padding: 8px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+hr{
+    margin: 0; !important
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    cursor: default;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.box-so-lieu{
+    padding: 20px 0;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.box-edit{
+    display: fl;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    margin: 0 10px;
+    background-color: white;
+}
+
+.box-text{
+    width: 70%;
+}
+
+.box-icon{
+    width: 30%;
+    margin: auto 0;
+    text-align: center;
+    font-size: 40px;
+    color: #3991ee;
+}
+
+.box-text .so{
+    font-size: 35px;
+    margin: 3px;
+    font-weight: bold;
+}
+
+.box-text .text{
+    opacity: 0.7;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* css phần sản phảm chờ */
+
+.box-chung-san-pham-cho-xu-ly{
+    margin: 20px 0;
+}
+
+.box-phan-chia{
+    display: flex;
+    margin: 10px 0;
+}
+
+.box-cheack{
+    margin: auto;
+}
+
+.checkbox-edit{
+    font-size: 50px;
+}
+
+/* css cho phần bán sản phẩm */
+
+.phan-hien-san-pham{
+    /* padding: 20px 0; */
+    display: flex;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.flex-chon-1{
+    flex: 1;
+}
+.flex-chon-2{
+    flex: 2;
+}
+.flex-chon-1{
+    flex: 1;
+}
+
+.anh-san-pham img{
+    width: 100%;
+}
+
+.edit-chung-sp{
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.ten-san-pham{
+    font-weight:bold;
+}
+
+.ten-nguoi-ban{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gia-san-pham .so-gia{
+    font-size: 20px;
+    color: red;
+}
+
+/* css cho phaafn btn xu lys */
+.box-phe-duyet-chung{
+    padding: 20px 0;
+    border-top:  1px solid rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.btn-Xu-ly{
+    width: 100px;
+    background: none;
+    padding: 10px 15px;
+    margin:0 10px ;
+    border: none;
+}
+
+.btn-Xu-ly:hover{
+    opacity: 0.7;
+}
+
+.btn-duyet{
+    background-color: #01DF01;
+}
+
+.btn-xoa{
+    background-color: red;
+}

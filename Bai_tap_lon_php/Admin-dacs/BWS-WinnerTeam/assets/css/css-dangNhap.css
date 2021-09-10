@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#main{
+    height: calc(100% - 0px);
+    background: url(/assets/img/anh-trai-cay-co-dao.jpg) no-repeat center fixed; 
+    background-size: cover;
+    position: relative;
+    
+}
+
+#modal{
+    position: fixed;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+}
+
+#main__in{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+.main__header{
+    text-align: center;
+    top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.main__header h1{
+    font-size: 60px;
+}
+
+/* css content */
+.main__content{
+    background-color: rgba(0,0,0,0.5);
+    width: 500px;
+    height: auto;
+    padding: 60px 70px 30px 70px;
+    animation: puffIn forwards 0.5s;
+}
+
+.main__content button{
+    background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input::placeholder{
+    color: rgba(255,255,255,0.7);
+
+}
+ 
+.main__content .tab__input{
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: none;
+    color: white;
+}
+
+.content__img-text{
+    text-align: center;
+}
+
+.main__content img{
+    width: 250px;
+    height:300px;
+    margin: 10px;
+}
+
+.content__prompt{
+    display: flex;
+    justify-content:space-between;
+}
+
+.content__prompt-text a {
+    color: red;
+    text-decoration: none;
+}
+
+.content__prompt p{
+    font-size: 14px;
+}
+
+.form-check{
+    padding: 0;
+}
+
+
+/* css footer */
+
+.main__footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main__footer span{
+    color: red;
+}
+/* css cho chuển đônng qua lại trang */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+.tab {
+  display: none;
+}
+
+/* repon cho mobile: width < 740px*/
+@media only screen and (max-width: 37.5em){
+    #main__in{
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .main__content{
+        width: 100%;
+    }
+
+    .main__content img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .content__prompt{
+        justify-content: unset;
+    }
+
+    .content__prompt .content__prompt-first{
+        display: none;
+    }
+
+    .content__prompt-first-1 a{
+        font-size: 14px;
+    }
+}
+
+
+
+  
+
+

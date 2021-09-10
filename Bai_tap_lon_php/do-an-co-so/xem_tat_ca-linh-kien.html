@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linh kiện điện tử</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/css/css_xtc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css">
+
+</head>
+<body>
+    <div id="main">
+            <div id="header">
+                <!-- tạo nav -->
+
+            <div id="main-nav" class="nav-chinh">
+                <div class="container nav-can-len">
+                    <div class="hien-thi khoang-cach-cac-phan">
+                        <ul class="hien-thi-menu">
+                            <li class="hien-thi-li">
+                                <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                            </li>
+                            <li class="hien-thi-li repon-mobile">
+                                <p class="logo-text">
+                                    <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                    thegioiso.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="thanh-search khoang-cach-cac-phan">
+                        <input class="input-search" type="text" placeholder="Tìm kiến">
+                        <!-- <button class="btn-tim">
+                            <i class="ti-search"></i>
+                        </button> -->
+                    </div>
+        
+                    <div class="item-icon khoang-cach-cac-phan">
+                        <ul class="item-icon-ul">
+                            <li class="item-icon-li">
+                                <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                            </li>
+                            <li class="item-icon-li item-account">
+                                <i class="ti-user"></i>
+
+                                <div id="iteam__nav" class="nav_mobile">
+                                    <div class="item">
+                                        <a href="./dang-ki-bwd-tieng-viet.html">Đăng ký</a>
+                                    </div>
+        
+                                    <div class="item">
+                                        <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                                    </div>
+        
+                                    <!-- <div class="item">
+                                        <a href="#">Cộng Đồng</a>
+                                    </div> -->
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!-- tạo nav -->
+        
+        
+            <!-- tao phan hiển thị -->
+        
+            <div id="mySidepanel" class="sidepanel" >
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./index.html">Trang Chủ</a>
+                <a href="./mua-hang.html">Cửa hàng</a>
+                <a href="./Ban-hang.html">Mua bán</a>
+                <a href="./blog.html">Blog</a>
+                <hr style="background-color: #01DF01;">
+                <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+            </div>
+            <!-- kết thúc hiển thị -->
+            </div>
+            <div id="content" class="content-class">
+                <div class="container ">
+                    <div class="tieu-de-phan">
+                        <h3 class="ten-trang">Linh kiện điện tử</h3>
+                    </div>
+                    
+                    <div class="san-pham khoang-cach-cac-phan-trong-conten">
+                        <div class="row row-danh-cho-sap-xep tao-flex-thanh-col">
+                            <div  class="col-sm-3">
+                            </div>
+                            <div class="col-sm-7 cho-rong-full-man-hinh" style="margin-bottom: 10px;">
+                                <div class="sap-xep">
+                                    <ul class="sap-xep-the0-ul">
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="tieu-de-sap-xep">Sắp xếp theo:</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-tang-dan sap-xep-theo-chinh-sua">Giá tăng dần</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-giam-dan sap-xep-theo-chinh-sua">Giá giảm dần</p>
+                                        </li>
+                                    </ul>
+                                    <div class="thanh_loc-khi-repon" onclick="openThanhLoc()">
+                                        <p class="nut-loc">Lọc</p>
+                                    </div>
+                                    
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="row row-san-pham tao-flex-thanh-col">
+                            <div id="thanhLoc"  class="col-sm-3 phan-cho-thanh-loc an-di-khi-repon">
+
+                                <div class="box-thuvao">
+                                    <div class="thanh-chi-xuat-hien-khi-repon">
+                                        <p class="nut-ap-dung">Áp dụng</p>
+                                        <p class="tieude-thanh">Lọc</p>
+                                        <p class="nut-bam-tro-lai" onclick="closeThanhLoc()"> > </p>
+                                    </div>
+
+                                    <!-- khoảng giá -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-khong-gia')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Khoảng giá</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-khong-gia" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Trên 50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">40-50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">30-40 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">20-30 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">15-20 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">10-15 triệu</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">5-10 triệu</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">1-5 triệu</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">Dưới 1 triệu</p> 
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <!-- Loại hàng -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-loai-hang')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Loại hàng</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-loai-hang" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Chính hãng</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Nhập khẩu</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-9  phan-cho-san-pham cho-rong-full-man-hinh">
+                                <div class="box-san-pham tao-scroll">
+                                    <div class="row">
+                                        <div class="box-tung-san-pham">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-anh">
+                                                            <img src="https://mega.com.vn/media/product/250_19048_vga_inno3d_geforce_gtx_1050_ti_twin_x2.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-text">
+                                                            <p class="tem-san-pham">Vga INNO3D GEFORCE GTX 1050 TI TWIN X2, 4GB GDDR5, 128-bit, DP + HDMI+ DVI (N105K-2DDV-M5CM)</p>
+                                                            <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                            <p class="gia-san-pham">Giá Từ: <span class="so-tien">5.900.000</span></p>
+                                                            <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="./assect/img/xem-tat-ca/linh-kien/anh-linh-kien-1.png " alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">VGA CARD GIGABYTE NVIDIA QUADRO RTX6000</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">113.900.000đ</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_8991_vo_may_tinh_case_pc_xigmatek_ares_no_fan_1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Case Xigmatek Ares EN42784 ( No fan)</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">680.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_6183_bo_nguon_dragon_450w_fan_12cm_black_1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Nguồn Máy Tính Dragon 450W Fan 12cm (Có nguồn phụ)</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">480.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_281_285_chip_amd_cpu_ryzen_5_3400g_5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">CPU AMD RYZEN 5 3600 with Wraith Stealth cooler/ 3.6 GHz (4.2GHz Max Boost) / 36MB Cache / 6 cores / 12 threads / 65W / Socket AM4</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">5.050.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_15219_15219_cpu_intel_core_i5_10400f_2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Cpu Intel Core i5- 10400F Box</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">4.400.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_15265_mainboard_asus_rog_strix_b460_i_gaming.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Mainboard Asus ROG STRIX B460-I GAMING</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">3.550.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_8466_o_cung_wd_hdd_blue_1tb_3_5quot_sata_6gb.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">HDD PC 1TB WD -Blue</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">980.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_15798_vga_asus_tuf_gtx1650s_o4g_gaming_5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Vga Asus TUF-GTX1650S-O4G-GAMING</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">9.900.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_15217_vga_gigabyte_rx580_rx580gaming_8gd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">VGA CARD GIGABYTE NVIDIA QUADRO RTX6000</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">7.480.000</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_2517_tan_nhiet_nuoc_aio_asus_rog_ryujin_360_rgb.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Vga Gigabyte RX580 RX580GAMING-8GD Rev 2.0</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">Liên hệ</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://mega.com.vn/media/product/250_13250_13250_vga_asus_tuf_3_rx5700_o8g_gaming_7.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Vga Asus 8GB TUF 3-RX5700-O8G-GAMING</p>
+                                                        <p class="tinh-trang-sp">Hàng có sẵn</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">Liên hệ</span></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <a href="#">«</a>
+                                    <a class="active" href="#">1</a>
+                                    <a  href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">»</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bắt dầu phần footer -->
+
+            <div id="footer" class="footer">
+                <div class="container">
+                    <div class="row thanh-cot-repon">
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                            <p>
+                                Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                                Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Liên Hệ</h5>
+                            <p>
+                                470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                                Ngũ Hành Sơn, Đà Nẵng
+                            </p>
+
+                            <p>
+                                +8481-813-3841
+                            </p>
+
+                            <p>
+                                thegioiso@gmail.com
+                            </p>
+
+                        </div>
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Theo Dõi</h5>
+                            <p class="chua-item">
+                                <i class="ti-facebook item-mang-xh"></i>
+                                <i class="ti-instagram item-mang-xh"></i>
+                                <i class="ti-pinterest item-mang-xh"></i>
+                                <i class="ti-twitter item-mang-xh"></i>
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                            <p>
+                                <button class="btn-footer">Đăng ký</button>
+                                <button class="btn-footer">Đăng nhập</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kết thúc phần footer -->
+    </div>
+
+
+    <script src="./assect/javascript/js-xem-tat-ca.js">
+
+    </script>
+</body>
+</html>

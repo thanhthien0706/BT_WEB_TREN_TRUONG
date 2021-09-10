@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: tahoma;
+}
+#main {
+    margin-top: 12%;
+}
+.container{
+
+}
+.right{
+    float: right;
+    display: inline;
+    width: 400px;
+    position: relative;
+    animation-name: right;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.left{
+    float: left;
+    display: inline;
+    width: 400px;
+    position: relative;
+    animation-name: left;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+@keyframes right {
+    0%   { left:-200px; top:0px;}
+    100%  {left:0px; top:0px;}
+}
+@keyframes left {
+    0%   { right:-200px; top:0px;}
+    100%  {right:0px; top:0px;}
+}
+.truchinh {
+    /* box-shadow: 0px 2px 50px 0px #ccc; */
+    display: flex;
+   
+}
+
+.truchinh h2 {
+    margin-top: 32px 0;
+}
+
+.form-group {
+    margin: 32px 0px;
+}
+
+.form-group input {
+    width: 85%;
+    margin: 32px 30px;
+    border-radius: 8px;
+}
+
+.form-group i {
+    float: right;
+    margin-right: 12px;
+
+}
+.form-group .btn-group-vertical button {
+    width: 360px;
+    margin: 4px 0;
+    border-radius: 10px 10px;
+}
+
+.truchinh p {
+    margin: 12px 0;
+}
+
+.container .truchinh .form-group i{
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 35px;
+    margin-left: 30px;
+}
+.container .truchinh .form-group i a {
+    margin-right: 20px;
+}

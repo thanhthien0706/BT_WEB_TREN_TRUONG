@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính xách tay</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/css/css_xtc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css">
+
+</head>
+<body>
+    <div id="main">
+            <div id="header">
+                <!-- tạo nav -->
+
+            <div id="main-nav" class="nav-chinh">
+                <div class="container nav-can-len">
+                    <div class="hien-thi khoang-cach-cac-phan">
+                        <ul class="hien-thi-menu">
+                            <li class="hien-thi-li">
+                                <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                            </li>
+                            <li class="hien-thi-li repon-mobile">
+                                <p class="logo-text">
+                                    <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                    thegioiso.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="thanh-search khoang-cach-cac-phan">
+                        <input class="input-search" type="text" placeholder="Tìm kiến">
+                        <!-- <button class="btn-tim">
+                            <i class="ti-search"></i>
+                        </button> -->
+                    </div>
+        
+                    <div class="item-icon khoang-cach-cac-phan">
+                        <ul class="item-icon-ul">
+                            <li class="item-icon-li">
+                                <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                            </li>
+                            <li class="item-icon-li item-account">
+                                <i class="ti-user"></i>
+
+                                <div id="iteam__nav" class="nav_mobile">
+                                    <div class="item">
+                                        <a href="./dang-ki-bwd-tieng-viet.html">Đăng ký</a>
+                                    </div>
+        
+                                    <div class="item">
+                                        <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                                    </div>
+        
+                                    <!-- <div class="item">
+                                        <a href="#">Cộng Đồng</a>
+                                    </div> -->
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!-- tạo nav -->
+        
+        
+            <!-- tao phan hiển thị -->
+        
+            <div id="mySidepanel" class="sidepanel" >
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./index.html">Trang Chủ</a>
+                <a href="./mua-hang.html">Cửa hàng</a>
+                <a href="./Ban-hang.html">Mua bán</a>
+                <a href="./blog.html">Blog</a>
+                <hr style="background-color: #01DF01;">
+                <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+            </div>
+            <!-- kết thúc hiển thị -->
+            </div>
+            <div id="content" class="content-class">
+                <div class="container ">
+                    <div class="tieu-de-phan">
+                        <h3 class="ten-trang">Máy tính xách tay</h3>
+                    </div>
+                    
+                    <div class="san-pham khoang-cach-cac-phan-trong-conten">
+                        <div class="row row-danh-cho-sap-xep tao-flex-thanh-col">
+                            <div  class="col-sm-3">
+                            </div>
+                            <div class="col-sm-7 cho-rong-full-man-hinh" style="margin-bottom: 10px;">
+                                <div class="sap-xep">
+                                    <ul class="sap-xep-the0-ul">
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="tieu-de-sap-xep">Sắp xếp theo:</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-tang-dan sap-xep-theo-chinh-sua">Giá tăng dần</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-giam-dan sap-xep-theo-chinh-sua">Giá giảm dần</p>
+                                        </li>
+                                    </ul>
+                                    <div class="thanh_loc-khi-repon" onclick="openThanhLoc()">
+                                        <p class="nut-loc">Lọc</p>
+                                    </div>
+                                    
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="row row-san-pham tao-flex-thanh-col">
+                            <div id="thanhLoc"  class="col-sm-3 phan-cho-thanh-loc an-di-khi-repon">
+
+                                <div class="box-thuvao">
+                                    <div class="thanh-chi-xuat-hien-khi-repon">
+                                        <p class="nut-ap-dung">Áp dụng</p>
+                                        <p class="tieude-thanh">Lọc</p>
+                                        <p class="nut-bam-tro-lai" onclick="closeThanhLoc()"> > </p>
+                                    </div>
+    
+                                    <!-- thương hiệu -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-thuong-hieu')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Thương hiệu</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-thuong-hieu" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Lenovo </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Dell </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Asus </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">HP </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">Apple </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">MSI </p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">Acer </p> 
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- khoảng giá -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-khong-gia')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Khoảng giá</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-khong-gia" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Trên 50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">40-50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">30-40 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">20-30 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">15-20 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">10-15 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">Dưới 10 triệu</p> 
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- tình trang-->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-tinh-trang')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Tình Trạng</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-tinh-trang" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">New Sealed</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">New, Fullbox</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">New, Outlet</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">Used</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Loại hàng -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-loai-hang')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Loại hàng</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-loai-hang" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Chính hãng</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Nhập khẩu</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Cpu -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-CPU')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">CPU</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-CPU" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Intel Dual Core</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Intel Core i3</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Intel Core i5</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">Intel Core i7</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">Intel Core i9</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">Intel Xeon</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">AMD Ryzen 3</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">AMD Ryzen 5</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">AMD Ryzen 7</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Ram -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-RAM')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">RAM</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-RAM" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">4 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">8 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">12 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">16 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">20 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">32 Gb</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">64 Gb</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">128 Gb</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Ổ cứng -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-o-cung')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Ổ cứng</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-o-cung" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">SSD</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">HDD</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Kích thước màn hình -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-kich-thuoc-man-hinh')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Kích thước màn hình</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-kich-thuoc-man-hinh" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Dưới 13"</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">13 - 13.9"</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">14 - 14.9"</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">15 - 15.9"</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">16 - 17"</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI"> Trên 17"</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- loại màn hình -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-loai-man-hinh')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Loại màn hình</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-loai-man-hinh" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Nhám</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Gương</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Cảm ứng</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- dải màu hiển thị -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-dai-mau-hien-thi')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Dải màu hiển thị</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-dai-mau-hien-thi" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Trên 90% sRGB</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">70 - 90% sRGB</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Dưới 70% sRGB</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- tần số quét -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-tan-so-quet')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Tần số quét</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-tan-so-quet" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">60 Hz</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">75 Hz</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">120 Hz</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- tấm nền màn hình -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-tam-nen-man-hinh')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Tấm nền màn hình</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-tam-nen-man-hinh" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">IPS</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">TN</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">OLED</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- Độ phân giải -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-do-phan-giai')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Độ phân giải</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-do-phan-giai" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">1366 x 768 (HD)</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">1600 x 900 (HD+)</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">1920 x 1080 (FHD)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">1920 x 1200 (FHD+)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">2560 x 1440 (2K)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">3840 x 2160 (4K)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">3840 x 2400 (4K+)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">3072 x 1920 (3K)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">3000 x 2000 (3K)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">2256 x 1504 (2K)</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">2560 x 1600 (2K)</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- card do hoa -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-card-do-hoa')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Card đồ họa</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-card-do-hoa" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Intel HD</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Intel Iris</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Nvidia Geforce</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Nvidia Quadro</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">AMD Radeon</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">AMD FirePro</p>
+                                            </form>
+                                        </div>
+                                    </div>
+    
+                                    <!-- trọng lượng máy -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-trong-luong')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Trọng lượng</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-trong-luong" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Dưới 1kg</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">1 - 1.5kg</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">1.5 - 2kg</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">2 - 2.5kg</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">2.5 - 3.5kg</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">Trên 3.5kg</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-9  phan-cho-san-pham cho-rong-full-man-hinh">
+                                <div class="box-san-pham tao-scroll">
+                                    <div class="row">
+                                        <div class="box-tung-san-pham">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-anh">
+                                                            <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/22/637547088227204326_lenovo-ideapad-slim-3-15itl6-vang-dd.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-text">
+                                                            <p class="tem-san-pham">Lenovo IdeaPad Slim 3 15ITL6 i3 1115G4/8GB/512GB/15.6"FHD/Win 10</p>
+                                                            <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                            <p class="gia-san-pham">Giá Từ: <span class="so-tien">13.290.000 đ</span></p>
+                                                            <p><strike>13.990.000 đ</strike></p>
+                                                            <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/2/25/637498497194722384_FA506LH-LI-dd.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Asus TUF Gaming FX506LI-HN039T/i5-10300H</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">19.990.000 đ</span></p>
+                                                        <p><strike>21.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/24/637443973975955165_acer-aspire-3-a315-57g-den-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Acer Aspire 3 A315-57G-524Z i5-1035G1</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">16.290.000 đ</span></p>
+                                                        <p><strike>16.790.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/5/16/637252171731627681_msi-gf63-thin-10scxr-den-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">MSI GF63 Gaming GF63 10SCXR 052VN i7 10750H/8GB/512GB/15.6"FHD/GTX1650 MaxQ 4Gb/Win 10</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">20.990.000 đ</span></p>
+                                                        <p><strike>22.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2019/10/30/637080523484151384_dell-g3-15-3590-den-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Dell Gaming G3 15 i5 10300H/70223130</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">20.990.000 đ</span></p>
+                                                        <p><strike>22.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/5/13/637249620076449085_acer-nitro-an515-55-den-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Acer Nitro Gaming 5 AN515-55-5923/Core i5-10300H</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">19.990.000 đ</span></p>
+                                                        <p><strike>21.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/6/25/637286969461101562_lenovo-ideapad-s145-14-xam-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Lenovo Ideapad S145 - 14API/R3 3200U</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">9.690.000 đ</span></p>
+                                                        <p><strike>9.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/4/22/637547088227204326_lenovo-ideapad-slim-3-15itl6-vang-dd.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Lenovo IdeaPad Slim 3 15ITL6 i5 1135G7</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">16.490.000 đ</span></p>
+                                                        <p><strike>16.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/3/10/637509924794255281_acer-nitro-gaming-an515-44-den-dd.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">ACER Nitro Gaming AN515-44-R9JM/R5-4600H</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">20.990.000 đ</span></p>
+                                                        <p><strike>22.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/2/18/637492367355006906_asus-zenbook-ux325-xam-dd-bh-2nam.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Asus Zenbook UX325EA-EG079T/i5-1135G7</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">21.690.000 đ</span></p>
+                                                        <p><strike>22.690.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/3/15/637513974164882065_lenovo-thinkbook-14-g2-are-xam-dd.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Lenovo ThinkBook 14 G2 ARE R7 4700U</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">16.490.000 đ</span></p>
+                                                        <p><strike>16.990.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2020/12/9/637431307151221718_msi-modern-14-b11-xanh-dd.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">MSI Modern 14 B11MO-004VN/i5-1135G7</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">19.190.000 đ</span></p>
+                                                        <p><strike>19.490.000 đ</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá và quà tặng kèm</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <a href="#">«</a>
+                                    <a class="active" href="#">1</a>
+                                    <a  href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">»</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bắt dầu phần footer -->
+
+            <div id="footer" class="footer">
+                <div class="container">
+                    <div class="row thanh-cot-repon">
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                            <p>
+                                Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                                Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Liên Hệ</h5>
+                            <p>
+                                470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                                Ngũ Hành Sơn, Đà Nẵng
+                            </p>
+
+                            <p>
+                                +8481-813-3841
+                            </p>
+
+                            <p>
+                                thegioiso@gmail.com
+                            </p>
+
+                        </div>
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Theo Dõi</h5>
+                            <p class="chua-item">
+                                <i class="ti-facebook item-mang-xh"></i>
+                                <i class="ti-instagram item-mang-xh"></i>
+                                <i class="ti-pinterest item-mang-xh"></i>
+                                <i class="ti-twitter item-mang-xh"></i>
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                            <p>
+                                <button class="btn-footer">Đăng ký</button>
+                                <button class="btn-footer">Đăng nhập</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kết thúc phần footer -->
+    </div>
+
+
+    <script src="./assect/javascript/js-xem-tat-ca.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assect/css/css_blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css">
+
+
+</head>
+<body>
+
+    <div id="main">
+        <!-- tạo nav -->
+
+        <div id="main-nav" class="nav-chinh">
+            <div class="container nav-can-len">
+                <div class="hien-thi khoang-cach-cac-phan">
+                    <ul class="hien-thi-menu">
+                        <li class="hien-thi-li">
+                            <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                        </li>
+                        <li class="hien-thi-li repon-mobile">
+                            <p class="logo-text">
+                                <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                thegioiso.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="thanh-search khoang-cach-cac-phan">
+                    <input class="input-search" type="text" placeholder="Tìm kiến">
+                    <!-- <button class="btn-tim">
+                        <i class="ti-search"></i>
+                    </button> -->
+                </div>
+    
+                <div class="item-icon khoang-cach-cac-phan">
+                    <ul class="item-icon-ul">
+                        <li class="item-icon-li">
+                            <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                        </li>
+                        <li class="item-icon-li item-account">
+                            <i class="ti-user"></i>
+
+                            <div id="iteam__nav" class="nav_mobile">
+                                <div class="item">
+                                    <a href="./dang-ki-bwd-tieng-viet.html">Đăng ký</a>
+                                </div>
+    
+                                <div class="item">
+                                    <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                                </div>
+    
+                                <!-- <div class="item">
+                                    <a href="#">Cộng Đồng</a>
+                                </div> -->
+    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- tạo nav -->
+    
+    
+        <!-- tao phan hiển thị -->
+    
+        <div id="mySidepanel" class="sidepanel" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./index.html">Trang Chủ</a>
+            <a href="./mua-hang.html">Cửa hàng</a>
+            <a href="./Ban-hang.html">Mua bán</a>
+            <a href="./blog.html">Blog</a>
+            <hr style="background-color: #01DF01;">
+            <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+            <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+        </div>
+                   
+
+        <!-- phần cho blog nền -->
+
+        <div class="bao_chinh" style="margin-top: 50px;">
+            <div class="grid-blog">
+                <div class="box-chua-blog-chung" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+    
+                    <div class="box-chua-blog khoang-cach-hai-ben">
+                        <img src="./assect/img/blog/bai-bao-1.jpg" alt="">
+                        <div class="nen-de-len-blog">
+                            <div class="box-vien-ben-trong">
+                                <div class="box-chua-text">
+                                    <h4>4 robot hút bụi 'đầu bảng' tại Việt Nam</h4>
+                                    <p>
+                                        <button class="btn-doc-bao">ĐỌC</button>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="box-chua-blog khoang-cach-hai-ben">
+                        <img src="./assect/img/blog/bai-bao-2.jpg" alt="">
+                        <div class="nen-de-len-blog">
+                            <div class="box-vien-ben-trong">
+                                <div class="box-chua-text">
+                                    <h4>Máy nghe nhạc FiiO M11 Plus LTD (Limited Edition)</h4>
+                                    <p>
+                                        <button class="btn-doc-bao">ĐỌC</button>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="box-chua-blog khoang-cach-hai-ben">
+                        <img src="./assect/img/blog/bai-bao-3.jpg" alt="">
+                        <div class="nen-de-len-blog">
+                            <div class="box-vien-ben-trong">
+                                <div class="box-chua-text">
+                                    <h4>Ngô Minh Hiếu - từ 'hacker mũ đen' thành chuyên...</h4>
+                                    <p>
+                                        <button class="btn-doc-bao">ĐỌC</button>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="box-chua-blog khoang-cach-hai-ben ">
+                        <img src="./assect/img/blog/bai-bao-4.jpg" alt="">
+                        <div class="nen-de-len-blog">
+                            <div class="box-vien-ben-trong">
+                                <div class="box-chua-text">
+                                    <h4>Surface Pro 6 - Laptop 2-in-1 hoàn hảo</h4>
+                                    <p>
+                                        <button class="btn-doc-bao">ĐỌC</button>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+
+        <!-- kết thức blog nền -->
+
+
+        <!-- tạo phaann body -->
+        <div id="conent__blog-body" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row set__cot__tablet-moblie">
+                    <div class="col-sm-3 dung__cho-pc">
+                        <!-- tạo khung seach -->
+                        <div class="row">
+                            <div class="row__box">
+                                <header>TÌM KIẾM</header>
+
+                                <div class="boddy__search">
+                                     <input type="text" placeholder="Nhập tên bài báo"><button><i class="ti-search"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- kêt thúc search -->
+
+                        <!-- tạo phần cho chuyện nhà nông -->
+
+                        <div class="row khoan_cach">
+                            <div class="row__box">
+                                <header>Báo Mới</header>
+                                <div class="boddy__chuyen-nha-nong">
+
+                                    <a href="https://langmoi.vn/lao-nong-xu-lang-lam-giau-tu-trai-ngot/?fbclid=IwAR0wBiG-H1gpLojMMKOLnnx_IOQjkNyOinx9KldXitZOod4EK96oyHkuGAo" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_8_38952511/aab3cc59d91b3045690a.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                    <p>3 giờ</p>
+                                                    <h6>Cảnh giác với lừa đảo chiếm đoạt quy...</h6>
+                                                    <p>(HNMO) - Trong thời gian qua đã xuất hiện...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_329_38951773/d5bb78576d15844bdd04.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                <p>4 giờ</p>
+                                                <h6>Cảnh báo nguy cơ chiếm quyền kiểm soát SIM...</h6>
+                                                <p>VinaPhone khuyến cáo khách hàng cảnh...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_293_38951542/29ed86ff92bd7be322ac.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                    <p>19 giờ</p>
+                                                    <h6>Nhật Bản cảnh báo tin...</h6>
+                                                    <p>Theo cảnh báo của công ty Net Marketing...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="https://danviet.vn/hau-giang-nong-dan-choi-lon-mang-cong-nghe-israel-ve-trong-ra-thu-dua-ngot-lim-ban-dat-hang-2021051713480129.htm" style="text-decoration: none;">                                   
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                            
+                                               <div class="col-sm-5  phan_img">
+                                                   <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_35_38950358/e4298e369a74732a2a65.jpg.webp" alt="" >
+                                               </div>
+                                               <div class="col-sm-7 phan_text" >
+                                                       <p>14.7.2021</p>
+                                                       <h6>Khóa đào tạo trực tuyến dành...</h6>
+                                                       <p>Ngày 24/5/2021, Microchip Technology Inc...</p>
+                                               </div>
+                                        </div>
+                                       </a>
+
+                               </div>
+                            </div>
+                        </div>
+
+                        <!-- kết thúc cho chuyện nhà nông -->
+
+                        <!-- tạo phần thể loại -->
+
+                        <div class="row khoan_cach">
+                            <div class="row__box">
+                                <header>Thể Loại</header>
+
+                                <div class="body_theloai">
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text">
+                                            <div class="text-title">
+                                                <p>An Toàn Thông Tin</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Khởi Nghiệp</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Công Nghệ Ảo</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Máy Tính Mới</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- kết thúc thể loại -->
+                    </div>
+                    <div class="col-sm-9 tao-croll" style="padding-right: 30px; padding-left: 30px;">
+
+                        <div class="bai__bao_nen">
+                            <div class="title" data-aos="fade-up">
+                                <h2>Đại học RMIT ra mắt ngành Công nghệ Thông tin tại cơ sở Hà Nội</h2>
+                                <p>MAY 15, 2021</p>
+                            </div>
+
+                            <div class="anh_bao">
+                                <img src="https://channel.mediacdn.vn/thumb_w/640/2020/9/14/photo-1-1600050477177677065217.jpg" alt="" style="width: 100%; height: 100%;">
+                            </div>
+
+                            <div >
+                                <div class="text" >
+                                    <p style="font-size: 18px; font-weight: 600;">Sinh viên tương lai ...</p>
+                                    <p>
+                                        Sinh viên tương lai của trường sẽ có cơ hội tìm hiểu và đào sâu về nhiều mảng kiến thức cập nhật, phù hợp với xu thế công nghệ tương lai 4.0 như lập trình, khoa học dữ liệu (Data Science) và dữ liệu lớn (Big Data), trí tuệ nhân tạo (AI), Internet vạn vật (IoT), app di động (Android, iOS)...
+                                    </p>
+    
+                                    <p>
+                                      
+                                        Chương trình sẽ ra mắt và tuyển sinh ngành Công nghệ Thông tin tại Hà Nội từ tháng 9/2020 và bắt đầu chính thức giảng dạy từ tháng 10/2021 sau hơn 10 năm có mặt tại cơ sở TP. HCM....
+                                    </p>
+    
+                                </div>
+    
+                                <div class="nut__doc" >
+                                    <button onclick="DaiHocRmit()">Đọc</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr style="margin: 30px 0;">
+
+                        <div class="bai-bao-doc-them">
+
+                            <a href="./LuongKySuCNTT.html" style="text-decoration: none;">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2020/6/21/photo-1-15927007648571961345751.jpg" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Jun 15, 2021</p>
+                                            <h4>Lương kỹ sư Công nghệ thông tin hàng nghìn "đô" mỗi tháng</h4>
+                                            <p>Nhu cầu tuyển dụng ngành CNTT tăng gấp 4 lần sau một thập kỷ, mức lương thay đổi qua các năm, tùy thuộc vào từng vị trí cụ thể....</p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button onclick="LuongKySuCNTT()">Đọc</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="ke-ngang">
+                                <hr>
+                            </div>
+
+                            <a href="./TVTM.html" style="text-decoration: none;">
+                                <div class="row">
+                                    
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Sep 20, 2021</p>
+                                            <h4>Thương hiệu TV thông minh FFalcon chính thức ra mắt tại Việt Nam</h4>
+                                            <p>
+                                                Trước bối cảnh thị trường công nghệ thông tin tại Việt Nam ngày càng phát triển, FFalcon – thương hiệu TV hoàn toàn mới, chính thức có mặt tại Việt Nam từ tháng 3/2020....
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button onclick="TVTM()">Đọc</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <img src="https://channel.mediacdn.vn/thumb_w/640/2020/3/27/photo-1-15852996677261593758696.jpg" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="ke-ngang">
+                                <hr>
+                            </div>
+
+                            <a href="./GiamSatCL.html" style="text-decoration: none;">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2020/3/19/2020-03-19-161454-window-15846093126011675543409.png" alt="" style="width: 100%; height: 100%;">
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="text">
+                                            <p>Jun 15, 2021</p>
+                                            <h4>Hà Nội ra mắt ứng dụng giám sát người cách ly bằng GPS, tích hợp bản đồ online hiển thị địa bàn có người nghi nhiễm COVID-19</h4>
+                                            <p>
+                                                Không chỉ là công cụ hỗ trợ đắc lực cho cơ quan chức năng, ứng dụng Hà Nội SmartCity cũng đặc biệt hữu ích với đa số người dân...
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-reading">
+                                            <button onclick="GSCL()">Đọc</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                    </div>
+
+
+                    <!-- dùng cho giao dienj tablet và moblie -->
+                    <!-- <div class="dung__cho-repon"> -->
+                        <div class="col-sm-3  dung__cho-repon" style="margin-top: 50px;">
+                            <!-- tạo khung seach -->
+                            <div class="row">
+                                <div class="row__box">
+                                    <header>Tìm Kiếm</header>
+    
+                                    <div class="boddy__search">
+                                         <input type="text" placeholder="Enter article"><button><i class="ti-search"></i></button>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <!-- kêt thúc search -->
+    
+                            <!-- tạo phần cho chuyện nhà nông -->
+
+                            <div class="row khoan_cach">
+                            <div class="row__box">
+                                <header>Báo Mới</header>
+                                <div class="boddy__chuyen-nha-nong">
+
+                                    <a href="https://langmoi.vn/lao-nong-xu-lang-lam-giau-tu-trai-ngot/?fbclid=IwAR0wBiG-H1gpLojMMKOLnnx_IOQjkNyOinx9KldXitZOod4EK96oyHkuGAo" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_8_38952511/aab3cc59d91b3045690a.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                    <p>3 giờ</p>
+                                                    <h6>Cảnh giác với lừa đảo chiếm đoạt quy...</h6>
+                                                    <p>(HNMO) - Trong thời gian qua đã xuất hiện...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_329_38951773/d5bb78576d15844bdd04.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                <p>4 giờ</p>
+                                                <h6>Cảnh báo nguy cơ chiếm quyền kiểm soát SIM...</h6>
+                                                <p>VinaPhone khuyến cáo khách hàng cảnh...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">                                   
+                                     <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                         
+                                            <div class="col-sm-5  phan_img">
+                                                <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_293_38951542/29ed86ff92bd7be322ac.jpg.webp" alt="" >
+                                            </div>
+                                            <div class="col-sm-7 phan_text" >
+                                                    <p>19 giờ</p>
+                                                    <h6>Nhật Bản cảnh báo tin...</h6>
+                                                    <p>Theo cảnh báo của công ty Net Marketing...</p>
+                                            </div>
+                                     </div>
+                                    </a>
+
+                                    <a href="https://danviet.vn/hau-giang-nong-dan-choi-lon-mang-cong-nghe-israel-ve-trong-ra-thu-dua-ngot-lim-ban-dat-hang-2021051713480129.htm" style="text-decoration: none;">                                   
+                                        <div class="boddy__chuyen-nha-nong__bai-bao row khoan_cach-bao">
+                                            
+                                               <div class="col-sm-5  phan_img">
+                                                   <img src="https://photo-baomoi.zadn.vn/w300_r3x2/2021_05_24_35_38950358/e4298e369a74732a2a65.jpg.webp" alt="" >
+                                               </div>
+                                               <div class="col-sm-7 phan_text" >
+                                                       <p>14.7.2021</p>
+                                                       <h6>Khóa đào tạo trực tuyến dành...</h6>
+                                                       <p>Ngày 24/5/2021, Microchip Technology Inc...</p>
+                                               </div>
+                                        </div>
+                                       </a>
+
+                               </div>
+                            </div>
+                            </div>
+    
+                            <!-- kết thúc cho chuyện nhà nông -->
+    
+                            <!-- tạo phần thể loại -->
+
+                            <div class="row khoan_cach">
+                            <div class="row__box">
+                                <header>Thể Loại</header>
+
+                                <div class="body_theloai">
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text">
+                                            <div class="text-title">
+                                                <p>An Toàn Thông Tin</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Khởi Nghiệp</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Công Nghệ Ảo</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="phan__text khoang-cach-theloai">
+                                            <div class="text-title">
+                                                <p>Máy Tính Mới</p>
+                                            </div>
+
+                                            <div class="text-soluong">
+                                                <p>(4)</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            </div>
+    
+                            <!-- kết thúc thể loại -->
+                            
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- kêt thúc phần body -->
+
+
+        <!-- bắt dầu phần footer -->
+
+        <div class="footer">
+            <div class="container">
+                <div class="row thanh-cot-repon">
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                        <p>
+                            Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                            Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Liên Hệ</h5>
+                        <p>
+                            470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                            Ngũ Hành Sơn, Đà Nẵng
+                        </p>
+
+                        <p>
+                            +8481-813-3841
+                        </p>
+
+                        <p>
+                            thegioiso@gmail.com
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Theo Dõi</h5>
+                        <p class="chua-item">
+                            <i class="ti-facebook item-mang-xh"></i>
+                            <i class="ti-instagram item-mang-xh"></i>
+                            <i class="ti-pinterest item-mang-xh"></i>
+                            <i class="ti-twitter item-mang-xh"></i>
+                        </p>
+                    </div>
+                    
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                        <p>
+                            <button class="btn-footer">Đăng ký</button>
+                            <button class="btn-footer">Đăng nhập</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- kết thúc phần footer -->
+
+    </div>
+
+    <script src="./assect/javascript/js-blog.js ">
+
+    </script>
+
+    <script src="./assect/flickity-docs/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:200,
+        duration: 1000,
+      });
+    </script>
+</body>
+</html>

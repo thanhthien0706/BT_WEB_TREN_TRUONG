@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #001022;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active {
+    width: 60px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation ul li:hover {
+    background-color: #3991ee;
+}
+
+.navigation ul li:active{
+    background-color:rgb(70, 88, 255); ;
+}
+
+.navigation ul li:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.navigation ul li:nth-child(1):hover {
+    background: transparent;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa,
+.fab {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.box {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    transition: 0.5s;
+}
+
+.box.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.box .topbar {
+    width: 100%;
+    background: #FFF;
+    height: 60px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.toggle .fa {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+
+.search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label {
+    position: relative;
+    width: 100%;
+}
+
+.search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 45px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search label .fa {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    cursor: pointer;
+}
+
+.thongtin{
+    position: absolute;
+    right: 90px;
+    cursor: pointer;
+}
+
+.user {
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cardBox .card {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: inherit;
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.cardBox .card .cardName {
+    color: #999;
+}
+
+.cardBox .card .iconBox {
+    color: #3991ee;
+    font-size: 2.5em;
+}
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.details .recentOreders {
+    position: relative;
+    display: grid;
+    min-width: 530px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2 {
+    font-weight: 600;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.details table thead td {
+    font-weight: 600;
+}
+
+.details .recentOreders table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOreders table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.details .recentOreders table tbody tr:hover {
+    background-color: #3991ee;
+    color: #fff;
+}
+
+.details .recentOreders table tr td {
+    padding: 10px 5px;
+}
+
+.details .recentOreders table thead td:last-child,
+.details .recentOreders table tbody td:last-child {
+    text-align: right;
+}
+
+.details .recentOreders table thead td:nth-child(2),
+.details .recentOreders table tbody td:nth-child(2) {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.details .recentOreders table thead td:nth-child(3),
+.details .recentOreders table tbody td:nth-child(3) {
+    text-align: center
+}
+
+.status {
+    position: relative;
+    padding: 2px 4px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.pending {
+    background-color: #8dc02c;
+}
+
+.delivered {
+    background-color: #f9ca3f;
+}
+
+.return {
+    background-color: #999;
+}
+
+.inprogress {
+    background-color: deepskyblue;
+}
+
+.details .recentCustems {
+    position: relative;
+    display: grid;
+    min-width: 530px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* BIEU DO */
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.single-chart {
+    width: 33%;
+    justify-content: space-around;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.circular-chart.red .circle {
+    stroke: red;
+}
+
+.circular-chart.yellow .circle {
+    stroke: yellow;
+}
+
+.circular-chart.color .circle {
+    stroke: rgb(63, 248, 93);
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+.single-chart h4 {
+    text-align: center;
+}
+
+/* CHART */
+#myChart {
+    width: calc(100% - 300px);
+    max-width: 900px;
+}
+#myChart.active{
+    /* width: calc(100% - 60px); */
+}

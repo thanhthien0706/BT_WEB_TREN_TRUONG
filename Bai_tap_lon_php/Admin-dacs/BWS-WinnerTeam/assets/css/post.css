@@ -1,0 +1,42 @@
+.h2,
+h2 {
+  text-align: center;
+}
+
+.col-md-6 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 10px;
+  --tw-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.row {
+  padding: 20px;
+}
+
+.col-md-5 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 10px;
+  --tw-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.50);
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.send {
+  padding-top: 20px;
+}
+
+/* .mt-5{
+      padding: 20px;
+  } */
+h5 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 25px;
+}

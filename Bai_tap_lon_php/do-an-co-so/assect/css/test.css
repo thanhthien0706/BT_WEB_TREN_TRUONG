@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    cursor: default;
+}
+
+.box-chung{
+    display: flex;
+}
+
+.box1{
+    width: 100px ;
+    height: 100px;
+    background-color: black;
+}
+
+.box2{
+    width: 0;
+    height: 100px;
+    background-color: blue;
+    transition: 0.3s;
+}
+

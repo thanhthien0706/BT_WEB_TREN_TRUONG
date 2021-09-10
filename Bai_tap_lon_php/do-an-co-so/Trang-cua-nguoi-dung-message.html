@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin nhắn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/css/css_your-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css"> -->
+</head>
+<body>
+    <div id="main">
+        <!-- Bắt đầu phàn header -->
+        <div id="header">
+            <!-- tạo nav -->
+            <div id="main-nav" class="nav-chinh">
+            <div class="container nav-can-len">
+                <div class="hien-thi khoang-cach-cac-phan">
+                    <ul class="hien-thi-menu">
+                        <li class="hien-thi-li">
+                            <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                        </li>
+                        <li class="hien-thi-li repon-mobile">
+                            <p class="logo-text">
+                                <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                thegioiso.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="thanh-search khoang-cach-cac-phan">
+                    <input class="input-search" type="text" placeholder="Tìm kiến">
+                    <!-- <button class="btn-tim">
+                        <i class="ti-search"></i>
+                    </button> -->
+                </div>
+    
+                <div class="item-icon khoang-cach-cac-phan">
+                    <ul class="item-icon-ul">
+                        <li class="item-icon-li">
+                            <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                        </li>
+                        <li class="item-icon-li item-account">
+                            <i class="ti-user"></i>
+
+                            <div id="iteam__nav" class="nav_mobile">
+                                <div class="item">
+                                    <a href="./Trang-cua-nguoi-dung.html">Trang của tôi</a>
+                                </div>
+    
+                                <div class="item">
+                                    <a href="./index.html">Đăng xuất</a>
+                                </div>
+    
+                                <!-- <div class="item">
+                                    <a href="#">Cộng Đồng</a>
+                                </div> -->
+    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+            </div>
+            <!-- tạo nav -->
+        
+            <!-- tao phan hiển thị -->
+            <div id="mySidepanel" class="sidepanel" >
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./index-da-dang-nhap.html">Trang Chủ</a>
+            <a href="./mua-hang.html">Cửa hàng</a>
+            <a href="./Ban-hang.html">Mua bán</a>
+            <a href="./blog.html">Blog</a>
+            <hr style="background-color: #01DF01;">
+            <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+            <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+            </div>
+            <!-- kết thúc hiển thị -->
+        </div>
+        <!-- Kết thúc phàn header -->
+
+        <!-- Bắt đầu phàn Content -->
+        <div id="content" class="Khoang-cach-phan-content mau-nen-content">
+            <div class="chua-chung-heeder">
+                <div class="container">
+                    <div class="box-chua-ten-nguoi-dung">
+                        <div class="chua-ten">
+                            <img class="anh-nguoi-dung" src="./assect/img/your-page/long_le.jpg" alt="">
+                            <div class="thong-tin-nguoi-dung">
+                                <p class="ten-nguoi-dung">Le Quang Long</p>
+                                <p class="so-luong-dang-ki">Có <span class="so-luong">2</span> người theo dõi</p>
+                            </div>
+                        </div>
+    
+                        <!-- tạo phần chức năng trong -->
+                        <!-- <div class="nav-chuc-nang-nguoi-dung">
+                            
+                        </div> -->
+                    </div>
+    
+                    <!-- phần chứa bản chọn các chức năng -->
+                    <div class="box-chua-chung-cac-chuc-nang">
+                        <div class="nav-chua-nang">
+                            <ul class="nav-chuc-nang-ul">
+                                <li class="nav-chuc-nang-li ">
+                                    <p class="cac-lua-chon " onclick="window.location.href='./Trang-cua-nguoi-dung-dang-bai.html'">Bài đăng</p>
+                                </li>
+                                <li class="nav-chuc-nang-li">
+                                    <!-- <a href="./Trang-cua-nguoi-dung-da-mua.html"></a> -->
+                                    <p class="cac-lua-chon" onclick="window.location.href='./Trang-cua-nguoi-dung-da-mua.html'">Đã mua</p>
+                                </li>
+                                <li class="nav-chuc-nang-li duoc-lua-chon">
+                                    <p class="cac-lua-chon" onclick="window.location.href='./Trang-cua-nguoi-dung-message.html'">Tin nhắn</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- phần hiển thị message -->
+            <div class="chua-chung-phanmess">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 chieu-cao-cua-box border-khung">
+                            <!-- phần danh sách tin nhán -->
+                            <div class="chua-danh-sach-nguoi-nhan">
+                                <!-- chua thanh search -->
+                                <div class="box-chua-search">
+                                    <input type="text" placeholder="Tìm kiếm người dùng" class="search-nguoidung">
+                                </div>
+
+                            </div>
+
+
+                            <!-- chứa phần người nhắn -->
+                            <div class="box-chua-chung-danh-sach">
+
+                                <!-- người nhắn 1 -->
+                                <div class="chua-nguoi-nhan nguoi-duoc-chon-de-nhan">
+                                    
+                                    <img class="anh-nguoi-nhan" src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/165341690_925942044844019_7988171561740349414_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=8yfnpvZfZ_IAX-Vii1w&_nc_ht=scontent-sin6-2.xx&oh=2ec9e04afc29981653c6f5ccfc1a9852&oe=60E23434" alt="">
+                                    <div class="chua-content">
+                                        <p class="ten-nguoi-nhan">
+                                            Nguyễn Thành Thiện
+                                        </p>
+                                        <p class="tin-nhan">
+                                            Bạn: Mời bạn ạ :)
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- người nhắn 2 -->
+                                <div class="chua-nguoi-nhan ">
+                                    
+                                    <img class="anh-nguoi-nhan" src="data:image/png;base64,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" alt="">
+                                    <div class="chua-content">
+                                        <p class="ten-nguoi-nhan">
+                                            Admin
+                                        </p>
+                                        <p class="tin-nhan">
+                                            Bạn cần admin giúp đỡ gì sao?
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- người nhắn 3 -->
+                                <div class="chua-nguoi-nhan ">
+                                    
+                                    <img class="anh-nguoi-nhan" src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/c0.0.1536.1536a/s851x315/181028916_1116035378915034_5801314289187707480_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=da31f3&_nc_ohc=5mgouwDvYdoAX8Lg339&_nc_oc=AQkxtrvJfNE9mwbg2qNexEL4MvXjhxM2AyZ9VCLED3tNwgpR3bdKtWj_Ocreb-Z-KBM&tn=pESpkkHXtvHTW0Ug&_nc_ht=scontent-sin6-2.xx&tp=28&oh=4bde4d20b6af9e62f784ed7f2860a28a&oe=60E19609" alt="">
+                                    <div class="chua-content">
+                                        <p class="ten-nguoi-nhan">
+                                           Lê Văn Tấn
+                                        </p>
+                                        <p class="tin-nhan">
+                                            Hello người anh em
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-sm-8 tao-phan-tha-ngan-cach">
+                            <!-- phần tin nhắn -->
+                            <div class="chua-chung-tin-nhan">
+
+                                <!-- phần tên người dùng -->
+                                <div class="chua-khung-ten">
+                                    <div class="ten-nguoi-dung">
+                                        <img class="anh-nguoi-nhan" src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/165341690_925942044844019_7988171561740349414_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=8yfnpvZfZ_IAX-Vii1w&_nc_ht=scontent-sin6-2.xx&oh=2ec9e04afc29981653c6f5ccfc1a9852&oe=60E23434" alt="">
+                                        <div class="chua-content">
+                                            <p class="ten-nguoi-nhan">
+                                                Nguyễn Thành Thiện
+                                            </p>
+                                            <p class="tin-nhan">
+                                                Đang online
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- phần tin nhắn -->
+                                <div class="chua-tin-nhan">
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Hello!!!!</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">Chào nhá bạn muốn nói gì à</div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Hôm bữa tui có thấy bạn đăng tin bán cái điện thoại ấy</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Nên hôm nay tui ib hỏi Mua</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">À À</div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Không biết bạn đã bán điện thoại ấy chưa nhỉ</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">Tui chưa bán</div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Thế bán cho tui hỉ :)</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">Đăng cho vui vậy thoi chứ không bán được không bạn</div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Ơ bạn bị ngơ à :)</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">Thích vậy thì sao bạn hỉ</div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tin-nhan tin-nhan-ben-trai">
+                                        <div class="chua-tin">
+                                            <div class="text">Thế bạn tới công chuyện với admin rồi. mình báo cáo</div>
+                                        </div>  
+                                        <div class="thanh-trong"></div>  
+                                    </div>
+
+                                    <div class="tin-nhan  tin-nhan-ben-phai">
+                                        <div class="thanh-trong"></div>  
+                                        <div class="chua-tin">
+                                            <div class="text">Mời bạn ạ :)</div>
+                                        </div>  
+                                    </div>
+
+                                </div>
+
+                                <!-- phần trả lời -->
+                                <div class="box-chua-o-nhap">
+                                    <div class="chua-o-nhap">
+                                        <input class="o-nhap-tin" placeholder="Nhập tin" type="text" name="" id="">
+                                    </div>
+                                    <div class="chua-like">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Kết thúc phàn Content -->
+
+        <!-- bắt dầu phần footer -->
+        <div id="footer" class="footer">
+            <div class="container">
+                <div class="row thanh-cot-repon">
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                        <p>
+                            Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                            Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Liên Hệ</h5>
+                        <p>
+                            470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                            Ngũ Hành Sơn, Đà Nẵng
+                        </p>
+
+                        <p>
+                            +8481-813-3841
+                        </p>
+
+                        <p>
+                            thegioiso@gmail.com
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Theo Dõi</h5>
+                        <p class="chua-item">
+                            <i class="ti-facebook item-mang-xh"></i>
+                            <i class="ti-instagram item-mang-xh"></i>
+                            <i class="ti-pinterest item-mang-xh"></i>
+                            <i class="ti-twitter item-mang-xh"></i>
+                        </p>
+                    </div>
+                    
+                    <div class="col-sm-3  repon-footer">
+                        <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                        <p>
+                            <button class="btn-footer">Đăng ký</button>
+                            <button class="btn-footer">Đăng nhập</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- kết thúc phần footer -->
+
+    </div>
+
+    <script src="./assect/javascript/js-your-page.js">
+
+    </script>
+</body>
+</html>

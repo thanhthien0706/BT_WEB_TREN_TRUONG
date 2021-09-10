@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes xuathiendan{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes nhay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes chuchaybentraisang{
+    from{
+        opacity: 0;
+        left: 20px;
+    }
+    to{
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+@-webkit-keyframes chuchaybenphaisang{
+    from{
+        opacity: 0;
+        right: 20px;
+    }
+    to{
+        opacity: 1;
+        right: 50%;
+    }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#main{
+    height: calc(100% - 0px);
+    background: url(../img/anh-trai-cay-co-dao.jpg) no-repeat center fixed; 
+    background-size: cover;
+    position: relative;
+}
+
+#main__box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 80%;
+    max-height: 100%;
+    height: 80%;
+}
+
+.box__text-header{
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+.box__text-header-in{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: chuchaybentraisang 1s forwards;
+    width: 100%;
+}
+
+.box__text-header h1{
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.box__text-box{
+    max-width: 100%;
+    width: 90%;
+    /* height: calc(100% - 150px); */
+    animation: nhay 1.5s ease-in;
+}
+
+.box__content-chinhsua1{
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+}
+
+.box__content-chinhsua1-in{
+    margin: auto;
+    text-align: center;
+}
+
+.box__content-chinhsua1-in h2{
+    font-weight: 600;
+    color: black;
+}
+
+.box__content-chinhsua1-in p{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.box__content-chinhsua{
+    width: 100%;
+    height: auto;
+}
+
+.form__content{
+    justify-content: space-between;
+}
+
+.box__content{
+    background-color: rgba(0,0,0,0.5);
+    margin: auto;
+    max-width: 100%;
+    width: 70%;
+    padding: 70px 0px;
+}
+
+.box__content .form__content{
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.box__content-form{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.box__content-form img{
+    width: 50%;
+    height: 50%;    
+    color: white;
+    margin-bottom: 10px;
+}
+
+.box__content-form p{
+    text-align: center;
+    color: white;
+}
+/* 
+.box__content-form input{
+    width: 100%;
+} */
+
+.edit__the-text{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2.5px solid rgba(255,255,255,0.6);
+    margin-bottom: 8px;
+    color: white;
+}
+
+.edit__the-text::placeholder{
+    color: rgba(192,192,192,0.7);
+    font-size: 15px;
+}
+
+.btn_next-page{
+    width: 100%;
+}
+
+.box__text-footer{
+    text-align: center;
+    position: relative;
+}
+
+.box__text-footer--in{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    animation: chuchaybenphaisang 1s forwards;
+}
+
+.box__content .step {
+    height: 5px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.finish {
+    background-color: #4CAF50;
+}
+
+.box__content .box-in-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+  display: none;
+}
+
+.input-group{
+    border-bottom: 2.5px solid rgba(255,255,255,0.6);
+}
+
+.box__content-btn{
+    display: flex;
+    width: 90px;
+}
+
+.box__content-btn{
+    position: relative;
+}
+
+.content__signup{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
+
+.content__signup a p{
+    color: rgba(255,255,255,0.7);
+}
+
+.content__signup a p:hover{
+    color: red;
+}
+
+.btn_next-page{
+    background: none;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btn_next-page:hover {
+    background-color: rgba(195,195,195,0.5);
+    color: white;
+
+}
+
+/* .btn_next-page:focus{
+    background-color: white;
+    color: black;
+} */
+
+.box__text-footer{
+   color: white; 
+   margin-top: 10px ;
+}
+
+.box__text-footer .coler__text{
+    color: red;
+}
+
+/* respon cho tablet: width >= 740px and width < 1024px*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .box__text-box{
+        flex-direction: column;
+    }
+
+    .box__content{
+        width: 100%;
+    }
+    
+    .box__text-header{
+        top: -50px;
+    }
+    
+}
+
+/* repon cho mobile: width < 740px*/
+@media only screen and (max-width: 46.1875em){
+    .box__content-chinhsua1{
+        display: none;
+    }
+
+    .box__text-header h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .box__text-footer--in{
+        width: 100%;
+    }
+}

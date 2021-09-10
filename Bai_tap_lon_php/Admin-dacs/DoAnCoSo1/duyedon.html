@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../BWS-WinnerTeam/assets/icon/fontawesome-free-5.15.3-web/css/fontawesome.min.css"> -->
+    <title>Duyệt Sản Phẩm</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></scrip>
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <!-- <scrip src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></scrip> -->
+    <link rel="stylesheet" href="../BWS-WinnerTeam/assets/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="../BWS-WinnerTeam/assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../BWS-WinnerTeam/assets/stype/anim    ate.css-main/animate.min.css">
+    <link rel="stylesheet" href="../BWS-WinnerTeam/assets/stype/magic-master/dist/magic.min.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/stype/ihover-gh-pages/src/ihover.min.css">
+    <!-- REPONSIVE -->
+    <!-- cssMes -->
+    <link rel="stylesheet" href="./assets/css/mess.css">
+    <link rel="stylesheet" href="./assets/css/css-don-hang-admin.css">
+
+</head>
+
+<a href="../../do-an-co-so/xuLyPHP/database_phanTrang.php"></a>
+<a href="../../do-an-co-so/xuLyPHP/pagination_thu_vien.php"></a>
+
+
+<body>
+    <div id="main">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./admin.html">
+                        <!-- <span class="icon"><i class="fab fa-apple " aria-hidden="true" style="font-size: 30px;"></i></span> -->
+                        <span class="title">
+                            <!-- <h2>HOME</h2> -->
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./admin.html">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Trang Chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Customers.html">
+                        <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                        <span class="title">Khách Hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./message.html" class="notification">
+                        <span class="icon "><i class="fa fa-comments" aria-hidden="true"></i>
+                            <span class="badge">12</span>
+                        </span>
+                        <span class="title">Tin Nhắn</span>
+                        
+
+                    </a>
+                </li>
+                <li>
+                    <a href="./Setting.html">
+
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Cài Đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./statistical.html">
+
+                        <span class="icon"><i class="fas fa-chart-pie" style="font-size: 26px;"></i></span>
+                        <span class="title" style="line-height: 50px;">Thống Kê</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./duyedon.html">
+                        <span class="icon"><i class="fas fa-box" style="font-size: 26px;"></i></i></span>
+                        <span class="title" style="line-height: 50px;">Duyệt Sản Phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./dangtai.html">
+                        <span class="icon"><i class="fas fa-upload" style="font-size: 26px"></i></span>
+                        <span class="title" style="line-height: 50px;">Đăng Bài</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Version.html">
+                        <span class="icon"><i class="far fa-clock"  style="font-size: 30px;"></i></span>
+                        <span class="title" style="line-height: 50px;">Phiên Bản</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../do-an-co-so/index.html">
+
+                        <span class="icon"><i class="fa fa-sign-out-alt" aria-hidden="true"></i></span>
+                        <span class="title">Thoát</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"><i class="fa fa-bars"></i></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search here">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./images/10-12-2020.jpg" alt="">
+                </div>
+            </div>
+            <div class="Noidung">
+                <div class="box-chung-don-dat-hang">
+                    <div class="container">
+                        <div class="box-so-lieu">
+                            <!-- đơn hàng để xử lý -->
+                            <div class="box-edit">
+                                <div class="text-so-lieu box-text">
+                                    <p class="so">1000</p>
+                                    <p class="text">Đã xử lý</p>
+                                </div>
+                                
+                                <div class="icon-so-lieu box-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+            
+                            <!-- đơn hàng chwua xử lý -->
+                            <div class="box-edit">
+                                <div class="text-so-lieu box-text">
+                                    <p class="so">5</p>
+                                    <p class="text">Đang xử lý</p>
+                                </div>
+                                
+                                <div class="icon-so-lieu box-icon">
+                                    <i class="fas fa-stopwatch"></i>
+                                </div>
+                            </div>
+            
+                            <!-- đơn hàng giao thành công -->
+                            <div class="box-edit">
+                                <div class="text-so-lieu box-text">
+                                    <p class="so">100</p>
+                                    <p class="text">Giao thàng công</p>
+                                </div>
+                                
+                                <div class="icon-so-lieu box-icon">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                            </div>
+            
+                            <!-- đơn hàng chưa giao được -->
+                            <div class="box-edit">
+                                <div class="text-so-lieu box-text">
+                                    <p class="so">5</p>
+                                    <p class="text">Chưa giao được</p>
+                                </div>
+                                
+                                <div class="icon-so-lieu box-icon">
+                                    <i class="fas fa-user-times"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="box-chung-san-pham-cho-xu-ly">
+                            <div class="tieu-de-box">
+                                <h3 class="tieu-de">Chờ xử lý...</h3>
+                            </div>
+            
+                            <div class="box-san-phan">
+                                <p class="check-box-all">
+                                    <input class="checkbox-edit" type="checkbox" id="selecctall"/>  Chọn tất cả
+                                </p>
+            
+            
+                                <!-- sản phẩm 1 -->
+                                <div class="box-phan-chia">
+                                    <div class="box-cheack">
+                                            <input class="checkbox-edit checkbox1" type="checkbox" name="check[]" value="item1">
+                                    </div>
+                                    <div class="phan-hien-san-pham">
+                                        <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/42/232190/oppo-find-x3-pro-black-001-1-600x600.jpg" alt="">
+                                        </div>
+                    
+                                        <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                            <h3 class="ten-san-pham">OPPO Find X3 Pro 5G</h3>
+                                            <p class="the-loai-san-pham">
+                                                Thể loại: điện thoại
+                                            </p>
+                    
+                                            <p class="mota">
+                                                Mới : 100%
+                                            </p>
+                                        </div>
+                    
+                                        <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                            <p class="ten-nguoi-ban">Nguyễn Thành Công</p>
+                                            <p class="sdt-nguoi-ban">SDT: 0816122945</p>
+                                            <p class="gia-san-pham">
+                                                Giá:
+                                                <span class="so-gia">26.990.000₫</span>
+                                            </p>
+                    
+                                        </div>
+                    
+                                    </div>
+                                </div>
+            
+                                <!-- sản phẩm 2 -->
+                                <div class="box-phan-chia">
+                                    <div class="box-cheack">
+                                            <input class="checkbox-edit checkbox1" type="checkbox" name="check[]" value="item1">
+                                    </div>
+                                    <div class="phan-hien-san-pham">
+                                        <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQq8DrkigI8BgycsRMOd1W-f-wc7I1eyxMUn9utZeKjE7tqqjWvxtBKoEt1tzakjNuUmmCY3YBJQ&usqp=CAc" alt="">
+                                        </div>
+                    
+                                        <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                            <h3 class="ten-san-pham">Oppo A73 cũ</h3>
+                                            <p class="the-loai-san-pham">
+                                                Thể loại: điện thoại
+                                            </p>
+                    
+                                            <p class="mota">
+                                                Mô tả: điện thoại ngày tôi mới mua nhưng do kẹt
+                                                     nên bán lại gấp. Cam kết sản phẩm còn mới, sử dụng dưới 2 tháng
+                                            </p>
+                                        </div>
+                    
+                                        <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                            <p class="ten-nguoi-ban">Nguyễn Thành Thiện</p>
+                                            <p class="sdt-nguoi-ban">SDT: 0816122945</p>
+                                            <p class="gia-san-pham">
+                                                Giá:
+                                                <span class="so-gia">3.000.000đ</span>
+                                            </p>
+                    
+                                        </div>
+                    
+                                    </div>
+                                </div>
+            
+                                <!-- sản phẩm 3 -->
+                                <div class="box-phan-chia">
+                                    <div class="box-cheack">
+                                            <input class="checkbox-edit checkbox1" type="checkbox" name="check[]" value="item1">
+                                    </div>
+                                    <div class="phan-hien-san-pham">
+                                        <div class="flex-chon-1 anh-san-pham edit-chung-sp">
+                                            <img src="https://cdn.tgdd.vn/Products/Images/44/237636/acer-nitro-5-an515-45-r3sm-r5-nhqbmsv005-600x600.jpg" alt="">
+                                        </div>
+                    
+                                        <div class="flex-chon-2 thong-tin-san-pham edit-chung-sp">
+                                            <h3 class="ten-san-pham">Acer Nitro 5  cũ</h3>
+                                            <p class="the-loai-san-pham">
+                                                Thể loại: Máy Tính
+                                            </p>
+                    
+                                            <p class="mota">
+                                                Mô tả: Máy Tính Được Mua Cách Đây 6 tháng 
+                                                - Bảo Hành 3 Tháng 
+                                            </p>
+                                        </div>
+                    
+                                        <div class="flex-chon-1 thong-tin-nguoi-ban edit-chung-sp">
+                                            <p class="ten-nguoi-ban">Nguyễn Thành Thiện</p>
+                                            <p class="sdt-nguoi-ban">SDT: 0654423123</p>
+                                            <p class="gia-san-pham">
+                                                Giá:
+                                                <span class="so-gia">23.000.000đ</span>
+                                            </p>
+                    
+                                        </div>
+                    
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+            
+                        <div class="box-phe-duyet-chung">
+                            <button class="btn-Xu-ly btn-duyet">Duyệt</button>
+                            <button class="btn-Xu-ly btn-xoa">Xóa</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation')
+            let box = document.querySelector('.box')
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            box.classList.toggle('active');
+        }
+        (function ($) {
+            "use strict";
+
+            // Counter Number
+            $('.count').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        })(jQuery);
+        $(document).ready(function() {
+
+        $('#selecctall').click(function(event) {  //on click
+            if(this.checked) { // check select status
+                $('.checkbox1').each(function() { //loop through each checkbox
+                    this.checked = true;  //select all checkboxes with class "checkbox1"            
+                });
+
+            }else{
+                $('.checkbox1').each(function() { //loop through each checkbox
+                    this.checked = false; //deselect all checkboxes with class "checkbox1"                    
+                });      
+            }
+        });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

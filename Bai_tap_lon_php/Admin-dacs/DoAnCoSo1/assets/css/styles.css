@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    clear: both;
+}
+body {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(233, 233, 233);
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+nav .brand {
+    float: left;
+    height: 100%;
+    line-height: 80px;
+}
+
+nav .brand h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav .brand>a img {
+    width: 150px;
+    opacity: 1;
+    margin-left: 10px 0px;
+    padding-bottom: 27px
+}
+
+nav>ul {
+    float: left;
+    display: flex;
+    margin: -10px;
+    padding: -10px;
+    margin-left: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+nav ul li:hover {
+    /* background-color: lawngreen; */
+}
+
+nav>ul>li>a {
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.5s
+}
+
+nav ul li a:hover {
+    color: #4897e0;
+}
+
+nav .sub-nav {
+    display: block;
+    background-color: #000;
+    margin-top: -10px;
+    padding: 0;
+    display: none;
+}
+
+nav .sub-nav li {
+    position: absolute;
+    list-style-type: none;
+    float: none;
+    background: #000;
+    padding: 3px 15px;
+}
+
+nav .sub-nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li:hover .sub-nav {
+    display: block;
+}
+
+nav li i {
+    font-size: 10px;
+}
+
+nav .nav-right {
+    float: right;
+    margin-right: 100px;
+}
+
+nav .nav-right li {}
+
+nav .nav-right li a {}
+
+
+.input-group-append {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#title {
+    margin-top: 17px;
+    position: absolute;
+    width: 100%;
+    height: 284px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/Home/title4.jpg);
+}
+
+#title h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 100px;
+
+}
+
+#contact>.container{
+    display: flex;
+
+}
+/* Contact TIN TUC */
+#contact .left {
+    width: 60%;
+}
+
+#contact .left .container {
+    margin-top: 350px;
+}
+ .contact-title{
+    background-color: #eee;
+}
+#contact .left .top-tintuc img {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.center-tintuc img {
+    width: 250px;
+}
+
+/* Contact San Pham */
+#contact .right{
+    width: 40%;
+    margin-top: 350px;
+    margin-left: 032px;
+}
+#contact .sanpham .col{
+    padding-left: 30px;
+    padding-right: 0;
+    margin: 8px 0;
+}
+#ykien{
+    background-color: #eee;
+}
+#ykien .contact h2{
+   font-size: 32px;
+   font-weight: 500;
+   text-align: center;
+   /* letter-spacing: 2px; */
+}
+/* FOOTER */
+#footer {
+    background-color: #2b2b2b;
+}
+
+#footer .row {
+    margin-top: 48px;
+}
+input[type=submit]{
+    float: right;
+    display: inline-block;
+
+}
+#ykien{
+    
+}
+
+#footer .ti {
+    display: flex;
+    padding: 0;
+}
+
+#footer .ti a {
+    margin-left: -10px;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer .ti a i:hover {
+    color: aqua;
+}
+
+#footer .ti i[class*="ti-"] {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#footer h4 {
+    font-family: tahoma;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+#footer h6 {
+    color: #fff;
+    font-size: 14px;
+}
+
+#footer p {
+    color: #ccc;
+    font-size: 12px;
+}
+
+#footer .item {}
+
+#footer ul li {
+    list-style-type: none;
+    padding: 0 12px;
+}
+
+#footer .footer-menu {
+    padding-left: 40px;
+}
+
+#footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    color: rgb(45, 132, 212);
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giảm Giá Khủng</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assect/icon/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assect/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assect/css/css_xtc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assect/flickity-docs/flickity.min.css">
+
+</head>
+<body>
+    <div id="main">
+            <div id="header">
+                <!-- tạo nav -->
+
+            <div id="main-nav" class="nav-chinh">
+                <div class="container nav-can-len">
+                    <div class="hien-thi khoang-cach-cac-phan">
+                        <ul class="hien-thi-menu">
+                            <li class="hien-thi-li">
+                                <i class="ti-menu item-menu" onclick="openNav()"></i>
+
+                            </li>
+                            <li class="hien-thi-li repon-mobile">
+                                <p class="logo-text">
+                                    <img class="logo" src="./assect/img/logo-removebg-preview (1).png" alt="">
+                                    thegioiso.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="thanh-search khoang-cach-cac-phan">
+                        <input class="input-search" type="text" placeholder="Tìm kiến">
+                        <!-- <button class="btn-tim">
+                            <i class="ti-search"></i>
+                        </button> -->
+                    </div>
+        
+                    <div class="item-icon khoang-cach-cac-phan">
+                        <ul class="item-icon-ul">
+                            <li class="item-icon-li">
+                                <i class="ti-shopping-cart" onclick="window.location.href='./gio-hang.html'"></i>
+                            </li>
+                            <li class="item-icon-li item-account">
+                                <i class="ti-user"></i>
+
+                                <div id="iteam__nav" class="nav_mobile">
+                                    <div class="item">
+                                        <a href="./dang-ki-bwd-tieng-viet.html">Đăng ký</a>
+                                    </div>
+        
+                                    <div class="item">
+                                        <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                                    </div>
+        
+                                    <!-- <div class="item">
+                                        <a href="#">Cộng Đồng</a>
+                                    </div> -->
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <!-- tạo nav -->
+        
+        
+            <!-- tao phan hiển thị -->
+        
+            <div id="mySidepanel" class="sidepanel" >
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./index.html">Trang Chủ</a>
+                <a href="./mua-hang.html">Cửa hàng</a>
+                <a href="./Ban-hang.html">Mua bán</a>
+                <a href="./blog.html">Blog</a>
+                <hr style="background-color: #01DF01;">
+                <a href="./dang-nhap-tieng-viet.html">Đăng Nhập</a>
+                <a href="./dang-ki-bwd-tieng-viet.html">Đăng Ký</a>
+            </div>
+            <!-- kết thúc hiển thị -->
+            </div>
+            <div id="content" class="content-class">
+                <div class="container ">
+                    <div class="tieu-de-phan">
+                        <h3 class="ten-trang">Giảm giá khủng</h3>
+                    </div>
+                    
+                    <div class="san-pham khoang-cach-cac-phan-trong-conten">
+                        <div class="row row-danh-cho-sap-xep tao-flex-thanh-col">
+                            <div  class="col-sm-3">
+                            </div>
+                            <div class="col-sm-7 cho-rong-full-man-hinh" style="margin-bottom: 10px;">
+                                <div class="sap-xep">
+                                    <ul class="sap-xep-the0-ul">
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="tieu-de-sap-xep">Sắp xếp theo:</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-tang-dan sap-xep-theo-chinh-sua">Giá tăng dần</p>
+                                        </li>
+                                        <li class="sap-xep-theo-li khoang-cach-sap-xep">
+                                            <p class="sap-xep-giam-dan sap-xep-theo-chinh-sua">Giá giảm dần</p>
+                                        </li>
+                                    </ul>
+                                    <div class="thanh_loc-khi-repon" onclick="openThanhLoc()">
+                                        <p class="nut-loc">Lọc</p>
+                                    </div>
+                                    
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+
+                        <div class="row row-san-pham tao-flex-thanh-col">
+                            <div id="thanhLoc"  class="col-sm-3 phan-cho-thanh-loc an-di-khi-repon">
+
+                                <div class="box-thuvao">
+                                    <div class="thanh-chi-xuat-hien-khi-repon">
+                                        <p class="nut-ap-dung">Áp dụng</p>
+                                        <p class="tieude-thanh">Lọc</p>
+                                        <p class="nut-bam-tro-lai" onclick="closeThanhLoc()"> > </p>
+                                    </div>
+    
+                                    <!-- Thể loại -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-the-loai')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Thể loại</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-the-loai" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Máy tính xách tay</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">Phụ kiện</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">PC</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">Điện thoại</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- khoảng giá -->
+                                    <div class="box-chua-ten-chung ">
+                                        <div class="loc-theo-ten " onclick="anhiensanpham('theo-khong-gia')">
+                                            <p class=" chinh-sua-chung-phanloc-ten ten-loc">Khoảng giá</p>
+                                            <p class=" chinh-sua-chung-phanloc-ten dau_ben-loc dau-cong">+</p>
+                                        </div>
+                                        <div id="theo-khong-gia" class="an-hien lua-chon">
+                                            <form action="#" class="form-lua-chon">
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Lenovo">Trên 50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Dell">40-50 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Asus">30-40 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="HP">20-30 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Apple">15-20 triệu</p> 
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">10-15 triệu</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="MSI">5-10 triệu</p>
+                                                <p class="ckeck-list"><input class="ten-cau-lua-chon" type="checkbox" name="chon" value="Acer">Dưới 5 triệu</p> 
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-9  phan-cho-san-pham cho-rong-full-man-hinh">
+                                <div class="box-san-pham tao-scroll">
+                                    <div class="row">
+                                        <div class="box-tung-san-pham">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-anh">
+                                                            <img src="https://cdn.tgdd.vn/Products/Images/44/237630/hp-340s-g7-i3-240q4pa-13-600x600.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                        <div class="box-chua-text">
+                                                            <p class="tem-san-pham">
+                                                                HP 340s G7 i3 1005G1 (240Q4PA)
+                                                            </p>
+                                                            <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                            <p class="gia-san-pham">Giá Từ: <span class="so-tien">12.390.000₫</span></p>
+                                                            <p><strike>12.590.000₫</strike></p>
+                                                            <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/236315/lenovo-ideapad-slim-3-15iil05-i3-81we0132vn-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Lenovo IdeaPad 3 15IIL05 i3 1005G1 (81WE0132VN)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">11.790.000₫</span></p>
+                                                        <p><strike>12.990.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/230161/lenovo-thinkbook-15iil-i3-20sm00d9vn-021320-101327-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Lenovo ThinkBook 15IIL i3 1005G1 (20SM00D9VN)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">11.490.000₫</span></p>
+                                                        <p><strike>12.990.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/42/218355/samsung-galaxy-note-20-062220-122200-fix-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Samsung Galaxy Note 20
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">15.990.000₫</span></p>
+                                                        <p><strike>23.990.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/42/235986/realme-8-pro-balck-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Realme 8 Pro</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">8.390.000₫</span></p>
+                                                        <p><strike>8.690.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/238016/hp-15s-du1108tu-i3-2z6l7pa-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            HP 15s du1108TU i3 10110U (2Z6L7PA)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">12.290.000₫</span></p>
+                                                        <p><strike>18.290.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/54/214561/tai-nghe-chup-tai-gaming-mozardx-ds904-71-den-avatar-1-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Tai nghe chụp tai Gaming MozardX DS904 7.1 Đen
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">495.000₫</span></p>
+                                                        <p><strike>790.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/223656/acer-aspire-a315-56-34ay-i3-nxhs5sv007-9-223656-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Acer Aspire A315 56 34AY i3 1005G1 (NX.HS5SV.007)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">12.990.000₫</span></p>
+                                                        <p><strike>13.990.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/235978/hp-probook-440-g8-i3-2h0r6pa-17-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            HP ProBook 440 G8 i3 1115G4 (2H0R6PA)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">14.090.000₫</span></p>
+                                                        <p><strike>18.090.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="./assect/img/Cửa-hàng/may-tinh-xach-tay/anh-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">Apple Macbook Air(Chính hãng - Apple M1 - Late 2020)</p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">29.990.000 ₫</span></p>
+                                                        <p><strike>30.900.000 ₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/237636/acer-nitro-5-an515-45-r3sm-r5-nhqbmsv005-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Acer Nitro 5 AN515 45 R3SM R5 5600H/144Hz (NH.QBMSV.005)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">22.490.000₫</span></p>
+                                                        <p><strike>23.490.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="box-tung-san-pham">
+                                            <a href="#" style="text-decoration: none;">
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-anh">
+                                                        <img src="https://cdn.tgdd.vn/Products/Images/44/236962/acer-aspire-7-a715-75g-52s5-i5-nhq85sv002-600x600.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="box-chua-trong khoang-cach-chung-tung-sanpham">
+                                                    <div class="box-chua-text">
+                                                        <p class="tem-san-pham">
+                                                            Acer Aspire 7 A715 75G 52S5 i5 9300H (NH.Q85SV.002)
+                                                        </p>
+                                                        <p class="tinh-trang-sp">Còn 3 sản phẩm</p>
+                                                        <p class="gia-san-pham">Giá Từ: <span class="so-tien">20.990.000₫</span></p>
+                                                        <p><strike>21.990.000₫</strike></p>
+                                                        <p class="tang-kem-sp"><i class="ti-gift"></i>  Giảm giá khủng</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <a href="#">«</a>
+                                    <a class="active" href="#">1</a>
+                                    <a  href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">»</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bắt dầu phần footer -->
+
+            <div id="footer" class="footer">
+                <div class="container">
+                    <div class="row thanh-cot-repon">
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Lời Cảm ơn</h5>
+                            <p>
+                                Cảm ơn các bạn đã tin tưởng và dùng web của chúng tôi. 
+                                Chúng tôi sẽ cỗ gắng hết sức để web được hoàn thiện hơn.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Liên Hệ</h5>
+                            <p>
+                                470-Nam Kỳ Khởi Nghĩa, Hòa Quý, 
+                                Ngũ Hành Sơn, Đà Nẵng
+                            </p>
+
+                            <p>
+                                +8481-813-3841
+                            </p>
+
+                            <p>
+                                thegioiso@gmail.com
+                            </p>
+
+                        </div>
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Theo Dõi</h5>
+                            <p class="chua-item">
+                                <i class="ti-facebook item-mang-xh"></i>
+                                <i class="ti-instagram item-mang-xh"></i>
+                                <i class="ti-pinterest item-mang-xh"></i>
+                                <i class="ti-twitter item-mang-xh"></i>
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-3  repon-footer">
+                            <h5 class="tieu-de-footer">Tham Gia Cộng Đồng</h5>
+                            <p>
+                                <button class="btn-footer">Đăng ký</button>
+                                <button class="btn-footer">Đăng nhập</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kết thúc phần footer -->
+    </div>
+
+
+    <script src="./assect/javascript/js-xem-tat-ca.js">
+
+    </script>
+</body>
+</html>
